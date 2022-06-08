@@ -1,4 +1,4 @@
-import { ComponentProps } from 'react';
+import { ComponentProps, CSSProperties } from 'react';
 import { TooltipMessage } from '@storybook/components';
 
 export type TooltipConfig =
@@ -12,19 +12,19 @@ export type BadgeConfig = {
   // @deprecated: Contrast has been deprecated, please use the `styles` property.
   contrast?: string;
   styles?: {
-    backgroundColor?: string;
-    borderColor?: string;
-    borderRadius?: string;
-    borderStyle?: string;
-    borderWidth?: string;
-    color?: string;
-    fontSize?: string;
-    fontFamily?: string;
-    fontWeight?: string;
-    lineHeight?: string | number;
-    textTransform?: string;
-    paddingInline?: string;
-    paddingBlock?: string;
+    backgroundColor?: CSSProperties['backgroundColor'];
+    borderColor?: CSSProperties['borderColor'];
+    borderRadius?: CSSProperties['borderRadius'];
+    borderStyle?: CSSProperties['borderStyle'];
+    borderWidth?: CSSProperties['borderWidth'];
+    color?: CSSProperties['color'];
+    fontSize?: CSSProperties['fontSize'];
+    fontFamily?: CSSProperties['fontFamily'];
+    fontWeight?: CSSProperties['fontWeight'];
+    lineHeight?: CSSProperties['lineHeight'];
+    textTransform?: CSSProperties['textTransform'];
+    paddingInline?: CSSProperties['paddingInline'];
+    paddingBlock?: CSSProperties['paddingBlock'];
   };
   tooltip?: TooltipConfig;
 };
